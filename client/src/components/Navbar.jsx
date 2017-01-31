@@ -44,15 +44,15 @@ function links() {
   ]
 
   const labelLinksNoAuth = [
-    'login',
-    'signup',
+    'entre',
+    'cadastre-se',
     'forgot'
   ]
   
   if(Auth.isUserAuthenticated())
     return (
       <li key={"logout"}>
-        <Link to="/logout" >logout</Link>
+        <Link to="/logout" >sair</Link>
       </li>)
   else
     return map(linksNoAuth, (value, index) => {

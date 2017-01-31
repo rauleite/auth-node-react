@@ -12,7 +12,7 @@ const ForgotForm = ({
 }) => (
   <Card>
     <form action='/' onSubmit={onSubmit}>
-      <CardTitle title='Nova Senha' />
+      <CardTitle title='Esqueceu?' subtitle="Sem problema, informe seu email de acesso" />
       {errors.summary && <p className='error-message'>{errors.summary}</p>}
       <div>
         <TextField

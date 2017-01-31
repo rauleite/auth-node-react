@@ -4,7 +4,7 @@ import React from 'react'
 
 const HomePage = () => (
   <Card>
-    <CardTitle title='React Application' subtitle='This is the home page.' />
+    <CardTitle title='Tela Inicial' subtitle='Esta é a minha homepage.' />
   </Card>
 )
 

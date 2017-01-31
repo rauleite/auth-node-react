@@ -34690,7 +34690,7 @@
 	function links() {
 	  var linksNoAuth = ['/login', '/signup', '/forgot'];
 
-	  var labelLinksNoAuth = ['login', 'signup', 'forgot'];
+	  var labelLinksNoAuth = ['entre', 'cadastre-se', 'forgot'];
 
 	  if (_Auth2.default.isUserAuthenticated()) return _react2.default.createElement(
 	    'li',
@@ -34698,7 +34698,7 @@
 	    _react2.default.createElement(
 	      _reactRouter.Link,
 	      { to: '/logout' },
-	      'logout'
+	      'sair'
 	    )
 	  );else return (0, _lodash.map)(linksNoAuth, function (value, index) {
 	    return _react2.default.createElement(
@@ -57490,7 +57490,7 @@
 	    _react2.default.createElement(
 	      'form',
 	      { action: '/', onSubmit: onSubmit },
-	      _react2.default.createElement(_Card.CardTitle, { title: 'Nova Senha' }),
+	      _react2.default.createElement(_Card.CardTitle, { title: 'Esqueceu?', subtitle: 'Sem problema, informe seu email de acesso' }),
 	      errors.summary && _react2.default.createElement(
 	        'p',
 	        { className: 'error-message' },
@@ -59569,7 +59569,7 @@
 	  return _react2.default.createElement(
 	    _Card.Card,
 	    null,
-	    _react2.default.createElement(_Card.CardTitle, { title: 'React Application', subtitle: 'This is the home page.' })
+	    _react2.default.createElement(_Card.CardTitle, { title: 'Tela Inicial', subtitle: 'Esta \xE9 a minha homepage.' })
 	  );
 	};
 
@@ -59776,7 +59776,7 @@
 	    _react2.default.createElement(
 	      'form',
 	      { action: '/', onSubmit: onSubmit },
-	      _react2.default.createElement(_Card.CardTitle, { title: 'Login' }),
+	      _react2.default.createElement(_Card.CardTitle, { title: 'Entre', subtitle: 'Fa\xE7a seu login e bom proveito' }),
 	      successMessage && _react2.default.createElement(
 	        'p',
 	        { className: 'success-message' },
@@ -59787,39 +59787,32 @@
 	        { className: 'error-message' },
 	        errors.summary
 	      ),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_TextField2.default, {
-	          floatingLabelText: 'Email',
-	          name: 'email',
-	          errorText: errors.email,
-	          onChange: onChange,
-	          value: user.email })
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_TextField2.default, {
-	          floatingLabelText: 'Senha',
-	          type: 'password',
-	          name: 'password',
-	          onChange: onChange,
-	          errorText: errors.password,
-	          value: user.password })
-	      ),
-	      _react2.default.createElement(
-	        _reactRouter.Link,
-	        { to: '/forgot' },
-	        ' Esqueceu a senha?'
-	      ),
-	      _react2.default.createElement('p', null),
+	      _react2.default.createElement(_TextField2.default, {
+	        floatingLabelText: 'Email',
+	        name: 'email',
+	        errorText: errors.email,
+	        onChange: onChange,
+	        value: user.email }),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(_TextField2.default, {
+	        floatingLabelText: 'Senha',
+	        type: 'password',
+	        name: 'password',
+	        onChange: onChange,
+	        errorText: errors.password,
+	        value: user.password }),
 	      _react2.default.createElement('br', null),
 	      _react2.default.createElement(
-	        'div',
+	        _Card.CardText,
 	        null,
-	        _react2.default.createElement(_RaisedButton2.default, { type: 'submit', label: 'ENTRAR', primary: true })
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/forgot' },
+	          'Esqueceu a senha?'
+	        )
 	      ),
+	      _react2.default.createElement('br', null),
+	      _react2.default.createElement(_RaisedButton2.default, { type: 'submit', label: 'ENTRAR', primary: true }),
 	      _react2.default.createElement(
 	        _Card.CardText,
 	        null,
@@ -60035,7 +60028,7 @@
 	    _react2.default.createElement(
 	      'form',
 	      { action: '/', onSubmit: onSubmit },
-	      _react2.default.createElement(_Card.CardTitle, { title: 'Sign Up' }),
+	      _react2.default.createElement(_Card.CardTitle, { title: 'Cadastre-se', subtitle: 'Tenha acesso a muito conte\xFAdo [significativo] gratuitamente' }),
 	      errors.summary && _react2.default.createElement(
 	        'p',
 	        { className: 'error-message' },

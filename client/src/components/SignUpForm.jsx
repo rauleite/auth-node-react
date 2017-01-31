@@ -13,7 +13,7 @@ const SignUpForm = ({
 }) => (
   <Card>
     <form action='/' onSubmit={onSubmit}>
-    <CardTitle title="Sign Up" />
+    <CardTitle title="Cadastre-se" subtitle="Tenha acesso a muito conteúdo [significativo] gratuitamente" />
       {errors.summary && <p className='error-message'>{errors.summary}</p>}
       <div>
         <TextField
